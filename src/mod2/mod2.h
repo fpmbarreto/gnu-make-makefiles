@@ -1,0 +1,1 @@
+void func_mod2(void);
