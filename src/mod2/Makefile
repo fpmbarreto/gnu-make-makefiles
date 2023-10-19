@@ -22,7 +22,6 @@ test:
 	@mkdir $(TEST_BIN_DIR)
 	gcc $(TEST_MODULE).c -o $(TEST_BIN_DIR)/$(TEST_MODULE) -L$(TARGET_DIR) -l$(MODULE_NAME)
 
-
 clean:
 	rm $(TARGET) $(OBJ)
 	rm -rf $(TEST_BIN_DIR)
