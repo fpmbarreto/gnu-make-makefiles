@@ -1,9 +1,9 @@
 MODULE_NAME = mod1
 
-TARGET_DIR = ../../bin
+TARGET_DIR = ../../bins
 TARGET = $(TARGET_DIR)/$(MODULE_NAME)
 
-OBJ_DIR = ../../obj
+OBJ_DIR = ../../objs
 OBJ = $(OBJ_DIR)/$(MODULE_NAME).o
 
 CFLAGS = -Wall -Werror
@@ -20,4 +20,4 @@ run: $(TARGET)
 	@./$(<)
 
 clean:
-	rm $(TARGET) $(OBJ)
+	rm $(TARGET) $(OBJ) $(MODULE_NAME)
