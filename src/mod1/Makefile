@@ -20,4 +20,4 @@ run: $(TARGET)
 	@./$(<)
 
 clean:
-	rm $(TARGET) $(OBJ) $(MODULE_NAME)
+	rm $(TARGET) $(OBJ)
