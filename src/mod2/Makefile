@@ -2,11 +2,11 @@ MODULE_NAME = mod2
 TEST_MODULE = test-mod2
 
 TEST_BIN_DIR = ../../test-build
-TARGET_DIR = ../../lib
-TARGET_NAME = lib$(MODULE_NAME)
+TARGET_DIR = ../../libs
+TARGET_NAME = libs$(MODULE_NAME)
 TARGET = $(TARGET_DIR)/$(TARGET_NAME).so
 
-OBJ_DIR = ../../obj
+OBJ_DIR = ../../objs
 OBJ = $(OBJ_DIR)/$(MODULE_NAME).o
 
 CFLAGS = -fPIC -Wall -Werror

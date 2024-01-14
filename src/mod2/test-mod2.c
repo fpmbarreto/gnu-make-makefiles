@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "mod2.h"
 
 int main (void)
