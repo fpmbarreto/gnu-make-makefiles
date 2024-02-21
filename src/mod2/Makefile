@@ -31,7 +31,7 @@ install:
 	cp *.h  $(INSTALL_HEADERS_DIR)
 
 uninstall:
-	rm -rf  $(INSTALL_HEADERS_DIR)
+	rm -rf  $(INSTALL_HEADERS_DIR).h
 
 clean:
 	rm -rf $(TARGET) $(OBJ) $(TEST_BIN_DIR)
