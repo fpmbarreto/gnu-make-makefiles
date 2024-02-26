@@ -8,7 +8,7 @@ TARGET = $(TARGET_DIR)/$(TARGET_NAME).so
 OBJ_DIR = ../../objs
 OBJ = $(OBJ_DIR)/$(MODULE_NAME).o
 
-INSTALL_HEADERS_DIR = ../../share-headers/$(MODULE_NAME)
+INSTALL_HEADERS_DIR = ../../share-headers
 TEST_BIN_DIR = ../../test-build
 
 CFLAGS = -fPIC -Wall -Werror
@@ -18,6 +18,7 @@ $(TARGET): $(OBJ)
 	gcc -shared $(<) -o $(@) $(LDFLAGS)
 
 $(OBJ): $(MODULE_NAME).c
+	@mkdir -p $(OBJ_DIR) $(TARGET_DIR)
 	gcc $(CFLAGS) $(<) -c -o $(@)
 
 build_test_dir:
