@@ -116,7 +116,6 @@ $(OBJ_1): $(SOURCE_1).cpp
 #$(OBJ_2): $(SOURCE_2).cpp
 #	$(CXX) $(CCFLAGS) -o $@ -c $<
 
-
 build_dir:
 	@echo Creating object directory if not exist
 	mkdir -p $(OBJ_DIR) $(TARGET_DIR)
@@ -126,4 +125,4 @@ clean:
 	-rm $(ALL_OBJS)
 	-rm $(TARGET)
 
-.PHONY: clean build_dir all
+.PHONY: clean build_dir all 
